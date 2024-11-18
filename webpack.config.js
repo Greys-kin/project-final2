@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
@@ -23,6 +24,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     require('autoprefixer'),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
     new CopyPlugin({
       patterns: [{ from: 'assets', to: 'assets' }]
     })
@@ -31,7 +35,12 @@ module.exports = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|jpg|svg|gif)$/i,
