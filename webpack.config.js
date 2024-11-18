@@ -5,7 +5,6 @@ const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  // mode: 'development',
   entry: './script.js',
   output: {
     filename: '[name].bundle.js',
@@ -22,9 +21,6 @@ module.exports = {
         collapseWhitespace: false
       }
     }),
-    // new HtmlWebpackPlugin({
-    //   template: './index.html'
-    // }),
     new CleanWebpackPlugin(),
     require('autoprefixer'),
     new CopyPlugin({
