@@ -1,0 +1,256 @@
+.swiper {
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 24px;
+  @media (min-width: 768px) {
+    height: 160px;
+  }
+  @media (min-width: 1120px) {
+    width: 1120px;
+  }
+}
+
+.swiper--brands.expanded {
+  @media (min-width: 768px) {
+    height: fit-content;
+  }
+}
+
+.swiper::after {
+  content: url(../img/fade-copy.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper::before {
+  content: url(../img/fade-copy.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: scale(-1, 1);
+}
+
+.swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 240px;
+  height: 72px;
+  background-color: #fff;
+  border: 1px solid $elementBorderColor;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  padding-inline: 16px;
+  @media (min-width: 768px) {
+    width: 224px;
+  }
+  @media (min-width: 1120px) {
+    width: 240px;
+    flex-wrap: wrap;
+  }
+}
+
+.swiper-wrapper {
+  padding-left: 16px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+
+    height: 160px;
+    padding: 0;
+    margin: 0;
+    // margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 16px;
+    padding-left: 24px;
+  }
+  @media (min-width: 1120px) {
+    column-gap: 32px;
+  }
+}
+
+.swiper__item-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: $mainTextColor;
+}
+
+.swiper__item-logo {
+  max-width: 128px;
+}
+
+.swiper__button {
+  background-image: url(../img/go.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, 0px) !important;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #dddddd !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc !important;
+}
+
+.swiper__expand {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    padding-left: 24px;
+  }
+}
+
+.swiper__expand::before {
+  @media (min-width: 768px) {
+    content: url('../img/expand.svg');
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+// tech
+
+.swiper--tech {
+  height: 188px;
+  @media (min-width: 768px) {
+    height: 160px;
+  }
+}
+
+.swiper--tech.expanded {
+  @media (min-width: 768px) {
+    height: fit-content;
+  }
+}
+
+.swiper--tech::after {
+  content: url(../img/fade-copy2.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper--tech::before {
+  content: url(../img/fade-copy2.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: scale(-1, 1);
+}
+
+.swiper .swiper-slide--tech {
+  height: 160px;
+  padding-top: 16px;
+}
+
+.swiper__item-name {
+  align-self: flex-start;
+}
+
+.swiper__button--tech {
+  background-position: top;
+  align-self: flex-end;
+  padding-bottom: 16px;
+}
+
+// price
+
+.main-container .swiper--price {
+  height: 228px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper--price::after {
+  content: url(../img/fade-copy3.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper--price::before {
+  content: url(../img/fade-copy3.svg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transform: scale(-1, 1);
+}
+
+.swiper-wrapper--price {
+  height: 200px;
+}
+
+.swiper .swiper-slide--price {
+  display: block;
+  width: 260px;
+  height: 200px;
+  padding: 16px;
+}
+
+.swiper__item-link--price {
+  display: block;
+}
+
+.swiper__item-title {
+  color: $greyTextColor;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.swiper__item-description {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.swiper__item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper__button-order {
+  background-image: url(../img/Group10.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 119px;
+  height: 32px;
+  align-self: flex-end;
+  margin-bottom: 16px;
+}

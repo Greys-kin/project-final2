@@ -1,0 +1,63 @@
+.container__slide-menu {
+  margin-bottom: 24px;
+  padding-inline: 16px;
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+    padding-inline: 24px;
+  }
+  @media (min-width: 1120px) {
+    margin-bottom: 16px;
+  }
+}
+
+.container__slide-menu::after {
+  content: url('../img/fade.svg');
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.container__slide-menu::before {
+  content: url('../img/fade.svg');
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  transform: scale(-1, 1);
+}
+
+.slide-menu {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  color: $greyTextColor;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  @media (min-width: 1120px) {
+    flex-wrap: wrap;
+  }
+}
+
+.slide-menu__link {
+  box-sizing: border-box;
+  padding: 8px;
+  padding-inline: 16px;
+  border: 2px solid transparent;
+  transition: border 0.7s;
+  @media (min-width: 1120px) {
+    padding-inline: 21px;
+  }
+}
+
+.slide-menu__link--active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: default;
+}
+
+.slide-menu a {
+  color: $greyTextColor;
+  text-decoration: none;
+}

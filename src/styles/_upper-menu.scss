@@ -1,0 +1,131 @@
+.header {
+  @media (min-width: 1120px) {
+    display: none;
+  }
+}
+
+.header__upper-menu {
+  height: 88px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-bottom: 1px solid $highlightBorderColor;
+  gap: 16px;
+  padding-inline: 16px;
+  align-items: center;
+  @media (min-width: 768px) {
+    gap: 20px;
+    padding-inline: 20px;
+  }
+}
+
+.upper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-menu__logo {
+  margin-right: auto;
+  @media (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+
+.upper-menu__divider2 {
+  display: block;
+  background-image: url(../img/divider.svg);
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 32px;
+  background-position: 50% 50%;
+  background-size: cover;
+  @media (min-width: 768px) {
+    // display: block;
+    order: -5;
+  }
+}
+
+.upper-menu__divider {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-image: url(../img/divider.svg);
+    background-repeat: no-repeat;
+    width: 2px;
+    height: 32px;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+.upper-menu__button-call {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-image: url(../img/call.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+}
+
+.upper-menu__button-repair {
+  display: block;
+  background-image: url(../img/repair.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 50% 50%;
+  background-size: contain;
+  @media (min-width: 768px) {
+    padding-inline: 0;
+  }
+}
+
+.upper-menu__button-chat {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-image: url(../img/chat.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+}
+
+.upper-menu__link-profile {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-image: url(../img/profile.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+}
+
+.upper-menu__button-burger {
+  order: -6;
+  background-image: url(../img/burger.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.upper-menu__link-checkstatus {
+  display: block;
+  background-image: url(../img/checkstatus.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 50% 50%;
+  background-size: contain;
+}

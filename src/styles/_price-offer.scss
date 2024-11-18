@@ -1,0 +1,37 @@
+.price-offer {
+  padding-inline: 16px;
+  margin-bottom: 40px;
+  @media (min-width: 768px) {
+    width: 421px;
+    padding-inline: 32px;
+  }
+  .price-offer__description {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    height: 138px;
+    @media (min-width: 768px) {
+      height: 60px;
+    }
+  }
+  .price-offer__button {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    text-align: left;
+    width: 192px;
+    @media (min-width: 768px) {
+      width: 316px;
+    }
+  }
+  .price-offer__button::after {
+    content: url('../img/Line.svg');
+    display: inline-block;
+    position: relative;
+    vertical-align: sub;
+    width: 12px;
+    height: 6px;
+    margin-left: 10px;
+  }
+}

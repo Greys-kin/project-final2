@@ -1,0 +1,82 @@
+$bodyBackgroundColor: #f8f8f8;
+$highlightBorderColor: #d9fff5;
+$elementBorderColor: #eaeaea;
+$greyTextColor: #7e7e82;
+$mainTextColor: #1b1c21;
+$highlightedLinks: #ff3e79;
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  color: $mainTextColor;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  // display: flex;
+  // flex-direction: column;
+  margin: 0;
+  background-color: $bodyBackgroundColor;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  @media (min-width: 768px) {
+    line-height: 20px;
+  }
+  @media (min-width: 1120px) {
+    display: grid;
+    grid-template-areas:
+      'burger-menu main'
+      'burger-menu footer';
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.main-container {
+  @media (min-width: 1120px) {
+    grid-area: main;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  padding-block: 0;
+  padding-inline: 0;
+  cursor: pointer;
+}
+
+.slide-menu__link:hover {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.upper-menu > a:hover,
+.upper-menu > button:hover,
+.content__link-more:hover,
+.actions__link-repair:hover,
+.actions__link-checkstatus:hover,
+button:hover,
+a:hover {
+  opacity: 0.5;
+}
+
+.upper-menu > a,
+.upper-menu > button,
+.content__link-more,
+.actions__link-repair,
+.actions__link-checkstatus,
+a,
+button {
+  transition: opacity 0.3s;
+}
+
+.highlighted-link {
+  color: $highlightedLinks;
+}
