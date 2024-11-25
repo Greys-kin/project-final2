@@ -42,7 +42,7 @@
   }
 }
 
-.burger-menu__container.active {
+.burger-menu__container--active {
   transform: translateX(0px);
 }
 
@@ -55,7 +55,7 @@
   margin-bottom: 34px;
 }
 
-.head__close-menu {
+.round-icon--close-menu {
   display: inline-block;
   background-image: url(../img/burgerClose.svg);
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@
   margin-right: auto;
 }
 
-.head__search {
+.round-icon--search {
   display: inline-block;
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@
   gap: 16px;
 }
 
-.contact__call {
+.round-icon--call-burger {
   display: inline-block;
   background-image: url(../img/call.svg);
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@
   background-size: contain;
 }
 
-.contact__chat {
+.round-icon--chat-burger {
   display: inline-block;
   background-image: url(../img/chat.svg);
   background-repeat: no-repeat;
@@ -156,7 +156,7 @@
   background-size: contain;
 }
 
-.contact__profile {
+.round-icon--profile-burger {
   display: inline-block;
   background-image: url(../img/profile.svg);
   background-repeat: no-repeat;

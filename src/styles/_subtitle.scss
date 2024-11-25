@@ -1,14 +1,10 @@
 .subtitle {
-  height: 80px;
-  background-image: linear-gradient(to right, $bodyBackgroundColor, #ffffff);
-  border-top: 1px solid $highlightBorderColor;
-  margin-bottom: 16px;
-  @media (min-width: 768px) {
-    height: 56px;
-    margin-bottom: 31px;
-  }
+  overflow: visible;
+  height: fit-content;
 
   .subtitle__name {
+    background-image: linear-gradient(to right, $bodyBackgroundColor, #ffffff);
+    border-top: 1px solid $highlightBorderColor;
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
@@ -17,10 +13,13 @@
     text-transform: uppercase;
     padding-block: 16px;
     margin: 0;
-    // margin-bottom: 16px;
     padding-inline: 16px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    box-sizing: border-box;
     @media (min-width: 768px) {
       padding-left: 24px;
+      margin-bottom: 31px;
     }
   }
 }

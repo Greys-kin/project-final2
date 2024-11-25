@@ -8,9 +8,11 @@
     border: none;
     font-family: 'TT Lakes';
     font-size: 16px;
-    margin-left: 24px;
-    margin-bottom: 32px;
   }
+}
+
+.expand-btn--margin {
+  margin-left: 24px;
 }
 
 .expand-btn::before {

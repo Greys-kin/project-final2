@@ -10,12 +10,8 @@ body {
   color: $mainTextColor;
   line-height: 18px;
   letter-spacing: 0.2px;
-  // display: flex;
-  // flex-direction: column;
   margin: 0;
   background-color: $bodyBackgroundColor;
-  overflow: hidden;
-  overflow-y: scroll;
   height: 100%;
   @media (min-width: 768px) {
     line-height: 20px;
@@ -26,7 +22,7 @@ body {
       'burger-menu main'
       'burger-menu footer';
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1458px) {
     width: 1440px;
     margin: 0 auto;
   }
@@ -35,6 +31,7 @@ body {
 .main-container {
   @media (min-width: 1120px) {
     grid-area: main;
+    width: 100%;
   }
 }
 
