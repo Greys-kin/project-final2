@@ -24,7 +24,7 @@
 	<nav class="burger-menu clearfix">
 		<div class="burger-menu__container">
 			<div class="burger-menu__head head">
-				<button class="round-icon round-icon--close-menu"></button>
+				<button class="round-icon round-icon--close burger-menu__close-btn"></button>
 				<a href="#" class="head__logo"><img src="img/logo.svg" alt=""></a>
 				<button class="round-icon round-icon--search"></button>
 			</div>
@@ -45,7 +45,7 @@
 					<a href="#" class="round-icon round-icon--profile-burger"></a>
 				</div>
 				<a class="burger-menu__email" href="mailto:mail@cps.com">mail@cps.com</a>
-				<span class="burger-menu__phone">8 800 890 8900</span>
+				<a class="burger-menu__phone" href="#">8 800 890 8900</a>
 				<div class="burger-menu__lang lang">
 					<a href="#" class="lang__ru lang__ru--active" aria-current="page">RU</a>
 					<a href="#" class="lang__en">EN</a>
@@ -54,32 +54,32 @@
 			</div>
 		</div>
 	</nav>
-	<div class="feedback">
-		<div class="feedback__container">
-		<button class="round-icon round-icon--close-menu"></button>
-		<div class="title feedback__title">
+	<div class="feedback modalMenu">
+		<div class="modalMenu__container modalMenu__container--feedback">
+		<button class="round-icon round-icon--feedback-closeMenu modalMenu__close-btn"></button>
+		<div class="title modalMenu__title">
 			<h2 class="title__name">Обратная связь</h2>
 		</div>
-		<form class="feedback__form" name="feedback" action="" method="post">
-			<input type="text" class="feedback__input" placeholder="Имя"/>
-			<input type="tel" class="feedback__input" placeholder="Телефон"/>
-			<input type="email" class="feedback__input" placeholder="Электронная почта"/>
-			<textarea class="feedback__message" placeholder="Сообщение"></textarea>
-			<div class="feedback__agreement">Нажимая “отправить”, вы даете согласие на <a class="highlighted-link">обработку персональных данных</a> и соглашаетесь с нашей <a class="highlighted-link">политикой конфиденциальности</a></div>
-			<button type="submit" class="feedback__submit"></button>
+		<form class="modalMenu__form" name="feedback" action="" method="post">
+			<input type="text" class="modalMenu__input" placeholder="Имя"/>
+			<input type="tel" class="modalMenu__input" placeholder="Телефон"/>
+			<input type="email" class="modalMenu__input" placeholder="Электронная почта"/>
+			<textarea class="modalMenu__message" placeholder="Сообщение"></textarea>
+			<div class="modalMenu__agreement">Нажимая “отправить”, вы даете согласие на <a class="highlighted-link">обработку персональных данных</a> и соглашаетесь с нашей <a class="highlighted-link">политикой конфиденциальности</a></div>
+			<button type="submit" class="modalMenu__submit submit-btn submit-btn--modal"></button>
 		</form>
 	</div>
 	</div>
-	<div class="request-call">
-		<div class="request-call__container">
-		<button class="round-icon round-icon--close-menu"></button>
-		<div class="title request-call__title">
+	<div class="request-call modalMenu">
+		<div class="modalMenu__container modalMenu__container--request-call">
+		<button class="round-icon round-icon--requestCall-closeMenu modalMenu__close-btn"></button>
+		<div class="title modalMenu__title">
 			<h2 class="title__name">Заказать звонок</h2>
 		</div>
-		<form class="request-call__form" name="feedback" action="" method="post">
-			<input type="tel" class="request-call__input" placeholder="Телефон"/>
-			<div class="request-call__agreement">Нажимая “отправить”, вы даете согласие на <a class="highlighted-link">обработку персональных данных</a> и соглашаетесь с нашей <a class="highlighted-link">политикой конфиденциальности</a></div>
-			<button type="submit" class="request-call__submit"></button>
+		<form class="modalMenu__form" name="request-call" action="" method="post">
+			<input type="tel" class="modalMenu__input" placeholder="Телефон"/>
+			<div class="modalMenu__agreement">Нажимая “отправить”, вы даете согласие на <a class="highlighted-link">обработку персональных данных</a> и соглашаетесь с нашей <a class="highlighted-link">политикой конфиденциальности</a></div>
+			<button type="submit" class="modalMenu__submit submit-btn submit-btn--modal"></button>
 		</form>
 	</div>
 	</div>
@@ -89,8 +89,8 @@
 			<div class="container__title title">
 				<h1 class="title__name">Услуги и сервисы</h1>
 				<div class="title__actions actions">
-					<a href="#" class="round-icon round-icon--repair"><span class="actions__link-name">Оставить заявку</span></a>
-					<a href="#" class="round-icon round-icon--checkstatus"><span class="actions__link-name">Статус ремонта</span></a></div>
+					<a href="#" class="actions__link round-icon round-icon--repair"><span class="actions__link-name">Оставить заявку</span></a>
+					<a href="#" class="actions__link round-icon round-icon--checkstatus"><span class="actions__link-name">Статус ремонта</span></a></div>
 			</div>
 			<nav class="container__slide-menu slide-menu">
 				<a href="#" class="slide-menu__link slide-menu__link--active">Ремонтируемые бренды</a>
@@ -108,12 +108,12 @@
 
 					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
 					Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-					<button class="content__link-more">Читать далее</button>
+					<button class="expand-btn expand-btn--article content__link-more">Читать далее</button>
 					</div>
 					<img class="article__img" src="img/MG3223.jpg" alt="">
 				</div>
 			</article>
-			<div class="subtitle"><h2 class="subtitle__name subtitle-content">Ремонт техники различных брендов</h2></div>
+			<div class="subtitle subtitle--margin"><h2 class="subtitle__name subtitle-content">Ремонт техники различных брендов</h2></div>
 			<div class="swiper swiper--brands">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -174,8 +174,8 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-			<button class="expand-btn expand-btn--margin">Показать все</button>
-			<div class="subtitle"><h2 class="subtitle__name subtitle-content">Ремонт различных видов техники</h2></div>
+			<button class="expand-btn expand-btn--margin expand-btn--brands">Показать все</button>
+			<div class="subtitle subtitle--margin"><h2 class="subtitle__name subtitle-content">Ремонт различных видов техники</h2></div>
 			<div class="swiper swiper--tech">
                 <div class="swiper-wrapper swiper-wrapper--tech">
                     <div class="swiper-slide swiper-slide--tech">
@@ -237,7 +237,7 @@
                 <div class="swiper-pagination"></div>
             </div>
 			<button class="expand-btn expand-btn--margin expand-btn--tech">Показать все</button>
-			<div class="subtitle"><h2 class="subtitle__name subtitle-content">Цены на услуги</h2></div>
+			<div class="subtitle subtitle--margin"><h2 class="subtitle__name subtitle-content">Цены на услуги</h2></div>
 			<div class="swiper swiper--price">
                 <div class="swiper-wrapper swiper-wrapper--price">
                     <div class="swiper-slide swiper-slide--price">
@@ -247,7 +247,7 @@
 								<div class="swiper__item-container--element">
 								<div class="swiper__item-title">Цена</div><div class="swiper__item-description">Бесплатно</div>
 								<div class="swiper__item-title">Срок</div><div class="swiper__item-description">30-120 мин</div></div>
-								<button class="round-icon round-icon--swiper round-icon--order"></button>
+								<button class="swiper__order-btn submit-btn submit-btn--order"></button>
 							</div>
                         </a>
                     </div>
@@ -258,7 +258,7 @@
 								<div class="swiper__item-container--element">
 								<div class="swiper__item-title">Цена</div><div class="swiper__item-description">Бесплатно</div>
 								<div class="swiper__item-title">Срок</div><div class="swiper__item-description">30-120 мин</div></div>
-								<button class="round-icon round-icon--swiper round-icon--order"></button>
+								<button class="swiper__order-btn submit-btn submit-btn--order"></button>
 							</div>
 						</a>
                     </div>
@@ -269,7 +269,7 @@
 								<div class="swiper__item-container--element">
 								<div class="swiper__item-title">Цена</div><div class="swiper__item-description">Бесплатно</div>
 								<div class="swiper__item-title">Срок</div><div class="swiper__item-description">30-120 мин</div></div>
-								<button class="round-icon round-icon--swiper round-icon--order"></button>
+								<button class="swiper__order-btn submit-btn submit-btn--order"></button>
 							</div>
 							</a>
                     </div>
@@ -280,7 +280,7 @@
 								<div class="swiper__item-container--element">
 								<div class="swiper__item-title">Цена</div><div class="swiper__item-description">Бесплатно</div>
 								<div class="swiper__item-title">Срок</div><div class="swiper__item-description">30-120 мин</div></div>
-								<button class="round-icon round-icon--swiper round-icon--order"></button>
+								<button class="swiper__order-btn submit-btn submit-btn--order"></button>
 							</div>
 							</a>
                     </div>
@@ -291,7 +291,7 @@
 								<div class="swiper__item-container--element">
 								<div class="swiper__item-title">Цена</div><div class="swiper__item-description">Бесплатно</div>
 								<div class="swiper__item-title">Срок</div><div class="swiper__item-description">30-120 мин</div></div>
-								<button class="round-icon round-icon--swiper round-icon--order"></button>
+								<button class="swiper__order-btn submit-btn submit-btn--order"></button>
 							</div>
 							</a>
                     </div>
@@ -309,27 +309,27 @@
 					<td class="price-table__element">Диагностика</td>
 					<td class="price-table__element">Бесплатно</td>
 					<td class="price-table__element">30 мин</td>
-					<td class="price-table__element"><button class="price-table__button-order"></button></td></tr>
+					<td class="price-table__element"><button class="price-table__button-order submit-btn submit-btn--order"></button></td></tr>
 				<tr class="price-table__row">
 					<td class="price-table__element">Замена дисплея</td>
 					<td class="price-table__element">1 000 ₽</td>
 					<td class="price-table__element">30-120 мин</td>
-					<td class="price-table__element"><button class="price-table__button-order"></button></td></tr>
+					<td class="price-table__element"><button class="price-table__button-order submit-btn submit-btn--order"></button></td></tr>
 				<tr class="price-table__row">
 					<td class="price-table__element">Замена полифонического динамика</td>
 					<td class="price-table__element">1 000 ₽</td>
 					<td class="price-table__element">30-120 мин</td>
-					<td class="price-table__element"><button class="price-table__button-order"></button></td></tr>
+					<td class="price-table__element"><button class="price-table__button-order submit-btn submit-btn--order"></button></td></tr>
 				<tr class="price-table__row">
 					<td class="price-table__element">Тестирование с выдачей технического заключения</td>
 					<td class="price-table__element">1 000 ₽</td>
 					<td class="price-table__element">30-120 мин</td>
-					<td class="price-table__element"><button class="price-table__button-order"></button></td></tr>
+					<td class="price-table__element"><button class="price-table__button-order submit-btn submit-btn--order"></button></td></tr>
 				<tr class="price-table__row">
 					<td class="price-table__element">Замена программного обеспечения</td>
 					<td class="price-table__element">1 000 ₽</td>
 					<td class="price-table__element">30-120 мин</td>
-					<td class="price-table__element"><button class="price-table__button-order"></button></td></tr>
+					<td class="price-table__element"><button class="price-table__button-order submit-btn submit-btn--order"></button></td></tr>
 			</table>
 			<div class="price-offer">
 				<p class="price-offer__description">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>

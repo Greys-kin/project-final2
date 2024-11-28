@@ -47,37 +47,26 @@
     display: flex;
     gap: 32px;
   }
-  .round-icon--repair {
+  .actions__link {
+    padding-right: 48px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: max-content;
+    color: black;
+    text-decoration: none;
     @media (min-width: 1120px) {
       display: block;
-      margin-left: auto;
-      padding-right: 48px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      background: url(../img/repair.svg) no-repeat 100%;
     }
   }
-  .round-icon--checkstatus {
-    @media (min-width: 1120px) {
-      display: block;
-      margin-right: 25px;
-      padding-right: 48px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      background: url(../img/checkstatus.svg) no-repeat 100%;
-    }
+  .actions__link:last-child {
+    margin-right: 25px;
   }
   .actions__link-name {
     @media (min-width: 1120px) {
       display: block;
-      text-align: left;
       line-height: 24px;
+      width: max-content;
+      padding-top: 8px;
     }
   }
-}
-
-.round-icon--repair,
-.round-icon--checkstatus {
-  color: black;
-  text-decoration: none;
 }

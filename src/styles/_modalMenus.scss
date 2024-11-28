@@ -1,7 +1,6 @@
-.feedback,
-.request-call {
+.modalMenu {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.9);
@@ -18,12 +17,11 @@
   }
 }
 
-.feedback__container,
-.request-call__container {
+.modalMenu__container {
   transform: translateX(-400px);
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   background-size: cover;
@@ -35,6 +33,9 @@
   scrollbar-width: none;
   overflow-y: scroll;
   transition: all 0.3s;
+  @media (min-width: 768px) {
+    width: 320px;
+  }
   @media (min-width: 1120px) {
     transform: translateX(0px);
     height: 100%;
@@ -42,14 +43,8 @@
     position: relative;
     overflow: visible;
   }
-  .round-icon--close-menu {
+  .modalMenu__close-btn {
     display: inline-block;
-    background-image: url(../img/burgerClose.svg);
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    background-position: 50% 50%;
-    background-size: contain;
     margin-left: 16px;
     margin-top: 24px;
     @media (min-width: 1120px) {
@@ -58,21 +53,18 @@
       margin-top: 40px;
     }
   }
-  .feedback__title,
-  .request-call__title {
+  .modalMenu__title {
     margin-top: 40px;
     @media (min-width: 1120px) {
       margin-bottom: 24px;
     }
   }
-  .feedback__form,
-  .request-call__form {
+  .modalMenu__form {
     padding-inline: 16px;
     @media (min-width: 1120px) {
       padding-inline: 32px;
     }
-    .feedback__input,
-    .request-call__input {
+    .modalMenu__input {
       font-family: 'TT Lakes';
       height: 48px;
       width: 100%;
@@ -83,7 +75,7 @@
       margin-bottom: 16px;
     }
 
-    .feedback__message {
+    .modalMenu__message {
       font-family: 'TT Lakes';
       height: 118px;
       width: 100%;
@@ -95,128 +87,18 @@
       margin-bottom: 16px;
     }
 
-    .feedback__submit,
-    .request-call__submit {
-      display: block;
-      background-image: url(../img/submit.svg);
-      background-repeat: no-repeat;
-      width: 136px;
-      height: 32px;
-      background-position: 50% 50%;
-      background-size: contain;
-      margin-left: auto;
-    }
-
-    .feedback__agreement,
-    .request-call__agreement {
+    .modalMenu__agreement {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 19px;
     }
   }
+  .modalMenu__submit {
+    display: block;
+    margin-left: auto;
+  }
 }
 
-.feedback__container--active,
-.request-call__container--active {
+.modalMenu__container--active {
   transform: translateX(0px);
 }
-
-// .request-call {
-//   position: fixed;
-//   width: 100vw;
-//   height: 100vh;
-//   z-index: 5;
-//   background-color: rgba(255, 255, 255, 0.9);
-//   background-attachment: fixed;
-//   display: none;
-//   top: 0;
-//   @media (min-width: 1120px) {
-//     height: 100%;
-//   }
-// }
-
-// .request-call__container {
-//   transform: translateX(-400px);
-//   display: flex;
-//   flex-direction: column;
-//   width: 320px;
-//   height: 100vh;
-//   background-color: #fff;
-//   background-size: cover;
-//   background-attachment: fixed;
-//   box-shadow:
-//     -2px 0 4px 0 #454f7e05,
-//     16px 0 52px 0 #0e185033;
-//   z-index: 6;
-//   scrollbar-width: none;
-//   overflow-y: scroll;
-//   transition: all 0.3s;
-//   @media (min-width: 1120px) {
-//     transform: translateX(0px);
-//     height: 100%;
-//     width: 440px;
-//     position: absolute;
-//     right: 0;
-//     overflow: visible;
-//   }
-//   .request-call__close-menu {
-//     display: inline-block;
-//     background-image: url(../img/burgerClose.svg);
-//     background-repeat: no-repeat;
-//     width: 40px;
-//     height: 40px;
-//     background-position: 50% 50%;
-//     background-size: contain;
-//     margin-left: 16px;
-//     margin-top: 24px;
-//     @media (min-width: 1120px) {
-//       position: absolute;
-//       left: -95px;
-//       margin-top: 40px;
-//     }
-//   }
-
-//   .request-call__title {
-//     margin-top: 40px;
-//     @media (min-width: 1120px) {
-//       margin-bottom: 24px;
-//     }
-//   }
-//   .request-call__form {
-//     padding-inline: 16px;
-//     @media (min-width: 1120px) {
-//       padding-inline: 32px;
-//     }
-//     .request-call__input {
-//       font-family: 'TT Lakes';
-//       height: 48px;
-//       width: 100%;
-//       padding-left: 16px;
-//       box-sizing: border-box;
-//       border: 1px solid $elementBorderColor;
-//       border-radius: 8px;
-//       margin-bottom: 16px;
-//     }
-
-//     .request-call__submit {
-//       display: block;
-//       background-image: url(../img/submit.svg);
-//       background-repeat: no-repeat;
-//       width: 136px;
-//       height: 32px;
-//       background-position: 50% 50%;
-//       background-size: contain;
-//       margin-left: auto;
-//     }
-
-//     .request-call__agreement {
-//       font-size: 14px;
-//       line-height: 16px;
-//       margin-bottom: 19px;
-//     }
-//   }
-// }
-
-// .request-call__container--active {
-//   transform: translateX(0px);
-// }

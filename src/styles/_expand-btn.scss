@@ -1,13 +1,12 @@
 .expand-btn {
   display: none;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  font-family: 'TT Lakes';
+  font-size: 16px;
   @media (min-width: 768px) {
     display: block;
-    font-weight: 500;
-    align-self: flex-start;
-    background-color: transparent;
-    border: none;
-    font-family: 'TT Lakes';
-    font-size: 16px;
   }
 }
 
@@ -16,18 +15,14 @@
 }
 
 .expand-btn::before {
-  @media (min-width: 768px) {
-    content: url('../img/expand.svg');
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    height: 24px;
-    margin-right: 8px;
-  }
+  content: url('../img/expand.svg');
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  height: 24px;
+  margin-right: 8px;
 }
 
 .expand-btn.active::before {
-  @media (min-width: 768px) {
-    transform: rotate(180deg);
-  }
+  transform: rotate(180deg);
 }

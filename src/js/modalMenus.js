@@ -1,7 +1,7 @@
 const burgerBtn = document.querySelector('.round-icon--burger')
 const burgerMenu = document.querySelector('.burger-menu')
 const burgerMenuContainer = document.querySelector('.burger-menu__container')
-const closeBtn = document.querySelector('.round-icon--close-menu')
+const closeBtn = document.querySelector('.round-icon--close')
 
 burgerBtn.addEventListener('click', displayMenu)
 closeBtn.addEventListener('click', closeMenu)
@@ -33,8 +33,12 @@ window.addEventListener('resize', () => {
 const feedbackBtn = document.querySelector('.round-icon--chat-burger')
 const feedbackBtn2 = document.querySelector('.round-icon--chat')
 const feedback = document.querySelector('.feedback')
-const feedbackContainer = document.querySelector('.feedback__container')
-const closeBtnFeedback = document.querySelector('.round-icon--close-menu')
+const feedbackContainer = document.querySelector(
+  '.modalMenu__container--feedback'
+)
+const closeBtnFeedback = document.querySelector(
+  '.round-icon--feedback-closeMenu'
+)
 
 feedbackBtn.addEventListener('click', displayMenuFeedback)
 feedbackBtn2.addEventListener('click', displayMenuFeedback)
@@ -48,19 +52,23 @@ feedback.addEventListener('click', (c) => {
 
 function displayMenuFeedback() {
   feedback.style.display = 'flex'
-  feedbackContainer.classList.add('feedback__container--active')
+  feedbackContainer.classList.add('modalMenu__container--active')
 }
 
 function closeMenuFeedback() {
   feedback.style.display = 'none'
-  feedbackContainer.classList.remove('feedback__container--active')
+  feedbackContainer.classList.remove('modalMenu__container--active')
 }
 
 const requestCallBtn = document.querySelector('.round-icon--call-burger')
 const requestCallBtn2 = document.querySelector('.round-icon--call')
 const requestCall = document.querySelector('.request-call')
-const requestCallContainer = document.querySelector('.request-call__container')
-const closeBtnRequestCall = document.querySelector('.round-icon--close-menu')
+const requestCallContainer = document.querySelector(
+  '.modalMenu__container--request-call'
+)
+const closeBtnRequestCall = document.querySelector(
+  '.round-icon--requestCall-closeMenu'
+)
 
 requestCallBtn.addEventListener('click', displayMenuRequestCall)
 requestCallBtn2.addEventListener('click', displayMenuRequestCall)
@@ -74,10 +82,10 @@ requestCall.addEventListener('click', (c) => {
 
 function displayMenuRequestCall() {
   requestCall.style.display = 'flex'
-  requestCallContainer.classList.add('request-call__container--active')
+  requestCallContainer.classList.add('modalMenu__container--active')
 }
 
 function closeMenuRequestCall() {
   requestCall.style.display = 'none'
-  requestCallContainer.classList.remove('request-call__container--active')
+  requestCallContainer.classList.remove('modalMenu__container--active')
 }

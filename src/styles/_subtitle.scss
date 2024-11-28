@@ -1,5 +1,4 @@
 .subtitle {
-  overflow: visible;
   height: fit-content;
 
   .subtitle__name {
@@ -14,12 +13,17 @@
     padding-block: 16px;
     margin: 0;
     padding-inline: 16px;
-    margin-bottom: 16px;
-    margin-top: 32px;
     box-sizing: border-box;
     @media (min-width: 768px) {
       padding-left: 24px;
-      margin-bottom: 31px;
     }
+  }
+}
+
+.subtitle--margin {
+  margin-bottom: 16px;
+  margin-top: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 31px;
   }
 }

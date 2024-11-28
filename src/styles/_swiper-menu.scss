@@ -1,10 +1,9 @@
 .swiper {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   margin-bottom: 24px;
   @media (min-width: 768px) {
     height: 160px;
-    width: 100%;
   }
 }
 
@@ -96,15 +95,6 @@
   max-width: 128px;
 }
 
-.round-icon--swiper {
-  background-image: url(../img/go.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 40px;
-  height: 40px;
-}
-
 .swiper-pagination {
   bottom: var(--swiper-pagination-bottom, 0px) !important;
   @media (min-width: 768px) {
@@ -186,12 +176,6 @@
   align-self: flex-start;
 }
 
-.round-icon--tech {
-  background-position: top;
-  align-self: flex-end;
-  padding-bottom: 16px;
-}
-
 // price
 
 .main-container .swiper--price {
@@ -252,13 +236,7 @@
   justify-content: space-between;
 }
 
-.round-icon--order {
-  background-image: url(../img/Group10.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 119px;
-  height: 32px;
+.swiper__order-btn {
   align-self: flex-end;
   margin-bottom: 16px;
 }

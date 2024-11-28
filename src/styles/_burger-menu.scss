@@ -19,10 +19,8 @@
 
 .burger-menu__container {
   transform: translateX(-400px);
-  // position: absolute;
   display: flex;
   flex-direction: column;
-  // overflow: hidden;
   width: 320px;
   height: 100vh;
   background-color: #fff;
@@ -55,32 +53,8 @@
   margin-bottom: 34px;
 }
 
-.round-icon--close-menu {
-  display: inline-block;
-  background-image: url(../img/burgerClose.svg);
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  background-position: 50% 50%;
-  background-size: contain;
-  margin-right: 16px;
-  @media (min-width: 1120px) {
-    display: none;
-  }
-}
-
 .head__logo {
   margin-right: auto;
-}
-
-.round-icon--search {
-  display: inline-block;
-  background-image: url(../img/search.svg);
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  background-position: 50% 50%;
-  background-size: contain;
 }
 
 .burger-menu__content {
@@ -136,36 +110,6 @@
   gap: 16px;
 }
 
-.round-icon--call-burger {
-  display: inline-block;
-  background-image: url(../img/call.svg);
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-
-.round-icon--chat-burger {
-  display: inline-block;
-  background-image: url(../img/chat.svg);
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-
-.round-icon--profile-burger {
-  display: inline-block;
-  background-image: url(../img/profile.svg);
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-
 .burger-menu__email {
   margin-bottom: 12px;
   line-height: 24px;
@@ -210,4 +154,12 @@
 .burger-menu a[aria-current='page'] {
   opacity: 1;
   cursor: default;
+}
+
+.burger-menu__close-btn {
+  display: inline-block;
+  margin-right: 16px;
+  @media (min-width: 1120px) {
+    display: none;
+  }
 }

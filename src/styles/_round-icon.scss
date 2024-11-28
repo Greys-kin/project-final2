@@ -1,0 +1,100 @@
+.round-icon {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.upper-menu {
+  .round-icon--call {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      background-image: url(../img/call.svg);
+    }
+  }
+
+  .round-icon--repair {
+    display: block;
+    background-image: url(../img/repair.svg);
+    @media (min-width: 768px) {
+      padding-inline: 0;
+    }
+  }
+
+  .round-icon--chat {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      background-image: url(../img/chat.svg);
+    }
+  }
+
+  .round-icon--profile {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      background-image: url(../img/profile.svg);
+    }
+  }
+
+  .round-icon--burger {
+    order: -6;
+    background-image: url(../img/burger.svg);
+  }
+
+  .round-icon--checkstatus {
+    display: block;
+    background-image: url(../img/checkstatus.svg);
+  }
+}
+
+.actions {
+  .round-icon--repair {
+    @media (min-width: 1120px) {
+      background: url(../img/repair.svg) no-repeat 100%;
+    }
+  }
+  .round-icon--checkstatus {
+    @media (min-width: 1120px) {
+      background: url(../img/checkstatus.svg) no-repeat 100%;
+    }
+  }
+}
+
+.round-icon--swiper {
+  background-image: url(../img/go.svg);
+}
+
+.round-icon--tech {
+  background-position: top;
+  align-self: flex-end;
+  padding-bottom: 16px;
+}
+
+.round-icon--close,
+.round-icon--feedback-closeMenu,
+.round-icon--requestCall-closeMenu {
+  background-image: url(../img/burgerClose.svg);
+}
+
+.round-icon--search {
+  display: inline-block;
+  background-image: url(../img/search.svg);
+}
+
+.round-icon--call-burger {
+  display: inline-block;
+  background-image: url(../img/call.svg);
+}
+
+.round-icon--chat-burger {
+  display: inline-block;
+  background-image: url(../img/chat.svg);
+}
+
+.round-icon--profile-burger {
+  display: inline-block;
+  background-image: url(../img/profile.svg);
+}
